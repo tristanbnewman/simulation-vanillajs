@@ -2,15 +2,15 @@
 
 # Project Summary
 
-This project is designed to give you an opportunity to build something from scratch and to connect HTML, CSS, JavaScript in one project.
+This project is designed to give you an opportunity to build something from scratch and to connect HTML, CSS, and JavaScript in one project.
 
-Your mentors have been asked to provide only minimal guidance. They can point you in the right direction, but cannot help you code. This project is a chance for you to combine and showcase the skills you've learned so far.
+Your mentors will be providing minimal help, as this is a chance to push yourself. They can point you in the right direction, but won't help you write the syntax to make it happen. This project is a chance for you to combine the skills you've learned so far.
 
 Good luck and work hard!
 
 # Setup
 
-Fork and clone this repository. Make sure to commit and push your code often. It's not fun to lose any of your work.
+Fork and clone this repository (this will get you easy access to the icon images). Make sure to commit and push your code often. It's not fun to lose any of your work.
 
 You will need to create the HTML, CSS, and JavaScript files and connect them yourself to get started.
 

@@ -18,7 +18,7 @@ You will need to create the HTML, CSS, and JavaScript files and connect them you
 
 Here is what your application should look like. Try to copy the styling as closely as you can.
 
-<img src='https://github.com/devmountain/simulation-vanillajs/blob/master/imgs/style_guide.png' alt='design'>
+<img src='https://github.com/devmountain/simulation-vanillajs/blob/master/imgs/design.png' alt='design'>
 
 ## Style Guide
 

@@ -75,6 +75,9 @@ addBtn.addEventListener('click', function(){
     balance.innerText = updateBal(monthlyExpenses)
     updateExpenseList(monthlyExpenses)
 
+    document.getElementById('newAmount').value = ''
+    document.getElementById('newName').value = ''
+
 })
 
 function updateBal(expenseList){

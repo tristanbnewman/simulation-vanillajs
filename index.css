@@ -36,6 +36,7 @@ body h1, h2{
 }
 
 .balanceDisplay h2{
+    font-family: 'Roboto', sans-serif;
     margin-right: 10px;
 }
 
@@ -54,8 +55,6 @@ main{
 }
 
 main div{
-    height: 30vh;
-    width: 35vw;
     border-radius: 5px;
 }
 
@@ -65,7 +64,6 @@ main div{
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-    padding: 10px;
     margin-top: 50px;
     align-items: flex-start;
     background-color: #EFE8E1;
@@ -73,11 +71,10 @@ main div{
 }
 
 #addBill{
-    height: fit-content;
     width: 30vw;
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
     font-size: 25px;
     background-color: #54D2E5;
 }
@@ -95,7 +92,9 @@ main div{
 
 #addBill input{
     width: 15vw;
-    height: 20px;
+    height: 25px;
+    border: 1px solid #424249;
+    border-radius: 3px;
 }
 
 .formField{
@@ -122,4 +121,8 @@ main div{
 .expenseList{
     padding: 0;
     margin: 0;
+}
+
+#expenseList h2{
+    margin-left: 10px;
 }

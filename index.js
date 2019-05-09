@@ -22,10 +22,12 @@ function addDefaultExpenses(){
     remBtn.addEventListener('click', function(e){
         let tgt = e.target
         tgtName = tgt.parentNode.parentNode.querySelector('p.itemName')
-        console.log(tgtName)
-        updateBal(monthlyExpenses, tgtName)
-
-        tgt.parentNode.parentNode.remove()
+        // console.log(tgtName)
+        
+        
+        updateBal(monthlyExpenses);
+        tgt.parentNode.parentNode.remove();
+        updateExpenseList(monthlyExpenses);
     })
 
 }
@@ -55,27 +57,30 @@ addBtn.addEventListener('click', function(){
         balance.innerText = updateBal(monthlyExpenses)
     })
 
-    balance.innerText = updateBal(monthlyExpenses)
+    var remBtns = document.getElementsByClassName('remBtn');
+    for(i=0;i<remBtns.length;i++){
+        remBtns[i].addEventListener('click', function(e){
+            let tgt = e.target
+            tgtName = tgt.parentNode.parentNode.querySelector('p.itemName')
+            // console.log(tgtName)
+            
+            
+            updateBal(monthlyExpenses);
+            tgt.parentNode.parentNode.remove();
+            updateExpenseList(monthlyExpenses);
+            balance.innerText = updateBal(monthlyExpenses)
+        })
+    }
 
+    balance.innerText = updateBal(monthlyExpenses)
+    updateExpenseList(monthlyExpenses)
 
 })
 
-function updateBal(expenseList, deletedExpenseName){
-    console.log(monthlyExpenses)
+function updateBal(expenseList){
+    // console.log(monthlyExpenses)
 
     let total = 0;
-
-    if(deletedExpenseName){
-        monthlyExpenses = monthlyExpenses.filter(function(expense){
-            if(tgtName == expense[name]){
-                return false
-            }
-            else{
-                return true
-            }
-        })
-    }
-    
 
     //for each exptense item in expense list find the amount property and add it to the total
     expenseList.forEach(function(expense){
@@ -83,4 +88,20 @@ function updateBal(expenseList, deletedExpenseName){
     })
 
     return total
+}
+
+function updateExpenseList(expenseList){
+    
+    let nameItems = document.getElementsByClassName('itemName')
+    let correctList = []
+
+    for(i = 0; i < nameItems.length; i++){
+
+        if(nameItems[i].innerText == expenseList[i].name){
+            correctList.push(expenseList[i])
+        }
+        console.log(correctList)
+    }
+
+    monthlyExpenses = correctList
 }

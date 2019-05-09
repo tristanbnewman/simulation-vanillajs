@@ -12,6 +12,7 @@ body{
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #424249;
 }
 
 .logo{

@@ -2,6 +2,11 @@ body{
     display: flex;
     flex-flow: column;
     margin: 0;
+    color: #424249;
+}
+
+body h1, h2{
+    font-family: 'Righteous', sans-serif;
 }
 
 .nav{
@@ -13,6 +18,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #424249;
+    color: #FFFDFC;
 }
 
 .logo{
@@ -26,6 +32,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
 }
 
 .balanceDisplay h2{
@@ -43,10 +50,10 @@ main{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    background-color: #FFFDFC;
 }
 
 main div{
-    border: 1px solid black;
     height: 30vh;
     width: 35vw;
     border-radius: 5px;
@@ -61,10 +68,34 @@ main div{
     padding: 10px;
     margin-top: 50px;
     align-items: flex-start;
+    background-color: #EFE8E1;
+    font-family: 'Roboto', sans-serif;
 }
 
 #addBill{
-    height: 30vh;
+    height: fit-content;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 25px;
+    background-color: #54D2E5;
+}
+
+#addBill button{
+    background-color: #424249;
+    color: #FFFDFC;
+    padding: 15px;
+    width: max-content;
+    border-radius: 5px;
+    width: 28vw;
+    font-size: 20px;
+    border: none;
+}
+
+#addBill input{
+    width: 15vw;
+    height: 20px;
 }
 
 .formField{
@@ -72,12 +103,16 @@ main div{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    align-items: center;
     height: fit-content;
     width: 30vw;
+    font-size: 25px;
 }
 
 .formField button{
     height: fit-content;
+    background-color: transparent;
+    border: none;
 }
 
 .title{
